@@ -6,7 +6,9 @@ import app
 from init import app, db
 
 
-app.config.from_object(os.environ['APP_SETTINGS'])
+app.config.from_object(
+    os.environ['APP_SETTINGS']
+)
 
 migrate = Migrate(app, db)
 manager = Manager(app)
