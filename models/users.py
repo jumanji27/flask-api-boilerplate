@@ -1,5 +1,6 @@
-from init import db
 from marshmallow import Schema, fields
+
+from models.init import db
 
 
 class Users(db.Model):

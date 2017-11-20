@@ -8,6 +8,3 @@ source ~/.bash_profile
 pg_ctl -D /usr/local/var/postgres start
 
 python manage.py db upgrade
-
-docker build -t flask-simple-api -f env/Dockerfile .
-
