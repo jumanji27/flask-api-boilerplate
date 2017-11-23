@@ -1,3 +1,3 @@
-from models.init import run
+from api.init import run
 
 run()

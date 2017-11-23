@@ -1,10 +1,11 @@
 from marshmallow import Schema, fields
 
-from models.init import db
+from api.init import db
 
 
 class Users(db.Model):
     __tablename__ = 'users'
+    __table_args__ = {'extend_existing': True}
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String())
