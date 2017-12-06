@@ -11,5 +11,4 @@ RUN pip3 install -r requirements.txt
 RUN /bin/bash -c "source env/bin/activate"
 ENV APP_SETTINGS="config.ProductionConfig"
 
-ENTRYPOINT ["python3"]
-CMD ["app.py"]
+CMD ["python3", "app.py"]

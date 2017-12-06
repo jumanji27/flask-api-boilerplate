@@ -1,5 +1,6 @@
 .DS_Store
 
+migrations/
 env/
 __pycache__/
 __init__.py

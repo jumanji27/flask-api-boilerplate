@@ -6,8 +6,8 @@ basedir = os.path.abspath(dirname)
 
 
 class Config(object):
-    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/flask-simple-api'
-    HOST = '0.0.0.0'
+    SQLALCHEMY_DATABASE_URI = 'postgres://db:5432/flask_api_boilerplate'
+    HOST = 'localhost'
     PORT = 5000
 
 
