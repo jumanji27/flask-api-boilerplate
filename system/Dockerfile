@@ -8,6 +8,7 @@ WORKDIR /flask-api-boilerplate
 
 RUN pip3 install -r requirements.txt
 
+RUN virtualenv env
 RUN /bin/bash -c "source env/bin/activate"
 ENV APP_SETTINGS="config.ProductionConfig"
 
