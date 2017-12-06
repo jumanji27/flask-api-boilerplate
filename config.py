@@ -7,7 +7,7 @@ basedir = os.path.abspath(dirname)
 
 class Config(object):
     SQLALCHEMY_DATABASE_URI = 'postgres://db:5432/flask_api_boilerplate'
-    HOST = 'localhost'
+    HOST = '0.0.0.0'
     PORT = 5000
 
 
