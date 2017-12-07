@@ -3,6 +3,7 @@ FROM ubuntu:17.10
 RUN apt-get update -y
 RUN apt-get install -y python3 python3-pip
 
+RUN rm -rf env
 COPY . /flask-api-boilerplate
 WORKDIR /flask-api-boilerplate
 
