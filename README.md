@@ -23,4 +23,4 @@ setup example: https://realpython.com/blog/python/flask-by-example-part-1-projec
 
 ### Docker/Compose Migrations
 
-docker exec -it dockerflask_flaskapp_1 bash -c "python manage.py db init/migrate/upgrade"
+    docker exec -it dockerflask_flaskapp_1 bash -c "python manage.py db init/migrate/upgrade"
