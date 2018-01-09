@@ -13,4 +13,4 @@ RUN virtualenv env
 RUN /bin/bash -c "source env/bin/activate"
 ENV APP_SETTINGS="config.ProductionConfig"
 
-CMD ["python3", "app.py"]
+CMD ["gunicorn", "app:app", "--log-level", "debug"]
