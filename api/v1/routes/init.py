@@ -31,10 +31,11 @@ def get():
 
 @api.route('/api/v1/set', methods=['POST'])
 def set():
+    schema = UsersSchema()
+
     db.session.add(
         Users(
-            request.json['name'],
-            request.json['profession'],
+            schema.load(request.json).data
         )
     )
     db.session.commit()
